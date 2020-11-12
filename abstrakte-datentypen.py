@@ -1,4 +1,5 @@
 # Sequenz, Array, List
+print("#### Sequenz ####")
 liste = ["Anna", "Berta", "Carla", "Dieter"]
 
 ## Lesezugriff über Index
@@ -25,13 +26,32 @@ print(neue_liste2)
 
 
 # Stack, Stapel, LIFO (Last In First Out)
+print("#### Stapel ####")
 stapel = []
+
+## Drauflegen (push)
 stapel.append('Anna')
 stapel.append('Berta')
 stapel.append('Carla')
 
+## oberstes Element entfernen
 print(stapel.pop())
 print(stapel)
 
 ## Anwendung für Stapel: Undo-Funktion
+
+
+# Queue, Warteschlange, FIFO (First In First Out)
+print("#### Schlange ####")
+schlange = []
+
+# Element an Schlange dranhängen
+schlange.append('Anna')
+schlange.append('Berta')
+schlange.append('Carla')
+print(schlange)
+
+# Erstes Element der Schlange entfernen
+print(schlange.pop(0))
+print(schlange)
 
