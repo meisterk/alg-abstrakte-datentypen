@@ -45,13 +45,51 @@ print(stapel)
 print("#### Schlange ####")
 schlange = []
 
-# Element an Schlange dranhängen
+## Element an Schlange dranhängen
 schlange.append('Anna')
 schlange.append('Berta')
 schlange.append('Carla')
 print(schlange)
 
-# Erstes Element der Schlange entfernen
+## Erstes Element der Schlange entfernen
 print(schlange.pop(0))
 print(schlange)
 
+# Dictionary, Key-Value-Store
+print("#### Dictionary ####")
+woerterbuch = { "Hallo":"hello", "Katze":"cat", "Hund":"dog", "Maus":"mouse" }
+
+## Lesezugriff
+print(woerterbuch["Katze"])
+print(woerterbuch["Maus"])
+
+## Neues Paar hinzufügen
+woerterbuch["Haus"] = "house"
+
+## Vorhandenes Paar löschen
+woerterbuch.pop('Haus', None)
+
+if "Haus" in woerterbuch:
+    print(woerterbuch["Haus"])
+else:
+    print("Keine Ahnung!")
+
+# Set, Menge
+print("#### Set, Menge ####")
+menge = {"Anna", "Berta", "Carla"}
+
+# Element hinzufügen
+menge.add("Alf")
+menge.add("Anna") # Wird nicht nochmal hinzugefügt, weil es schon drin ist
+menge.add("anna") # Wird hinzugefügt, weil es noch nicht drin ist
+print(menge)
+
+# Element entfernen
+menge.remove("Berta")
+print(menge)
+
+# Ist Element in Menge
+if "Berta" in menge:
+    print("Ist drin")
+else:
+    print("Ist nicht drin")
